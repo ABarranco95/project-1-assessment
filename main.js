@@ -11,10 +11,9 @@ count = 0
 currentValue.innerHTML = count
 
 
-
 // Add and subtract functions
 add.onclick = function() {
-    count + userInput.value;
+    count += parseInt(userInput.value);
     currentValue.innerHTML = count;
 }
 
