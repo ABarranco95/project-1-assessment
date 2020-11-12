@@ -16,7 +16,10 @@ add.onclick = function() {
     count += parseInt(userInput.value);
     currentValue.innerHTML = count;
     if(count < 0) {
-      count.style.color = 'red'  
+      currentValue.style.color = 'red'; 
+      return count
+    } else if (count >= 0) {
+      currentValue.style.color = 'black'
     }
 }
 
@@ -24,6 +27,10 @@ subtract.onclick = function() {
     count -= userInput.value;
     currentValue.innerHTML = count;
     if(count < 0) {
-        count.style.color = 'red'
+        currentValue.style.color = 'red';
+        return count;
+      } else if (count >= 0) {
+        currentValue.style.color = 'black'
       }
+      
 }
